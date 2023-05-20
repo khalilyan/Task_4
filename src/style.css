@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    border: border-box;
+    margin: 0;
+}
+
+.continer{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./bg.svg');
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+}
+
+#openaiIcon{
+    animation-name: none;
+    animation: 2s infinite ease-in-out;
+    animation-direction: alternate;
+    width: 300px;
+    height: 300px;
+    user-select: none;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+        scale: 1;
+    }
+    100%{
+        transform: rotate(1800deg);
+        scale: 1.2;
+    }
+}
+.form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#input{
+    height: 40px;
+    z-index: 5;
+    resize: vertical;
+    width: 80%;
+    padding: 0px 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Capa_1{
+    cursor: pointer;
+}
+
+.micrContain{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.microphone{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    animation: none;
+ }
+ 
+ #stop{
+     animation: animate .7s alternate infinite ease-in-out;
+     display: none;
+     fill: green;
+ }
+
+ 
+@keyframes animate{
+    0%{
+        scale: 1;
+        opacity: 1;
+    }
+    100%{
+        scale: 1.05;
+        opacity: .7;
+    }
+}
